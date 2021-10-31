@@ -122,6 +122,7 @@ const Home: NextPage = ({ list }: any) => {
 
   const dataForm = list.map((v: any, i: number) => {
     return {
+      key: i,
       coin: `${v.name} - ${v.symbol}`,
       price: `$ ${v.current_price ? v.current_price.toLocaleString() : 0}`,
       price1hr: `$ ${
