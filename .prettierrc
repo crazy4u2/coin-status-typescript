@@ -1,9 +1,18 @@
 {
-  "singleQuote": false,
+  "singleQuote": true,
   "semi": true,
   "useTabs": false,
   "tabWidth": 2,
+  "printWidth": 80,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
   "trailingComma": "all",
-  "printWidth": 100,
-  "arrowParens": "avoid"
+  "overrides": [
+    {
+      "files": "styles.ts",
+      "options": {
+        "jsxBracketSameLine": true
+      }
+    }
+  ]
 }
